@@ -219,12 +219,12 @@
 			<p class="subtitle">Fast weather intel with anime-level energy.</p>
 		</div>
 
-		<button class="location-button" on:click={useMyLocation}>
+		<button class="location-button" onclick={useMyLocation}>
 			◎ Use my location
 		</button>
 	</header>
 
-	<form on:submit={handleSubmit} class="search">
+	<form onsubmit={handleSubmit} class="search">
 		<label for="city">Search location</label>
 		<div class="search-row">
 			<input id="city" bind:value={city} placeholder="Enter a city..." autocomplete="off" />
